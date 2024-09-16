@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Montserrat", sans-serif;
+}
+
+@layer utilities {
+  .bg-split {
+    transition: clip-path 0.5s ease;
+  }
+
+  @media (max-width: 639px) {
+    .bg-split {
+      clip-path: polygon(0 66%, 100% 40%, 100% 100%, 0 100%);
+      
+    }
+  }
+
+  @media (min-width: 640px) {
+    .bg-split {
+      clip-path: polygon(0 66%, 100% 40%, 100% 100%, 0 100%);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .bg-split {
+      clip-path: polygon(70% 0, 100% 0, 100% 100%, 10% 100%);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .bg-split {
+      clip-path: polygon(56% 0, 100% 0, 100% 100%, 40% 100%);
+    }
+  }
+}
