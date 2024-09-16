@@ -53,7 +53,7 @@ const Navbar = () => {
 			<div
 				className={`${
 					isOpen ? "block" : "hidden"
-				} md:hidden absolute h-screen top-0 left-0 w-1/3 pt-16 pb-8 text-end pr-4 -z-20 bg-white shadow-lg`}
+				} md:hidden absolute h-screen top-0 left-0 w-1/3 pt-16 pb-8 text-start pl-4 -z-20 bg-white shadow-lg`}
 			>
 				<a className="block py-2 my-2">
 					<h1 className="text-[14px] font-bold tracking-widest text-black">
